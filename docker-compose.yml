@@ -1,0 +1,9 @@
+services:
+  scholarpath:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: scholarpath-ai
+    environment:
+      PYTHONUNBUFFERED: "1"
+    restart: "no"
